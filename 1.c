@@ -1,7 +1,7 @@
 //Ques. 14. Write a program to implement priority scheduling algorithm with context
 // switching time. Prompt to user to enter the number of processes and then enter their 
  //priority, burst time and arrival time also. Now whenever operating system preempts a 
- //process and shifts cpu’s control to some another process of higher priority assume 
+ //process and shifts cpuâ€™s control to some another process of higher priority assume 
  //that it takes 2 seconds for context switching(dispatcher latency).Form a scenario, 
  //where we can give the processes are assigned with priority where the lower integer
   //number is higher priority and then context switch .. as the process waits the priority 
@@ -60,7 +60,7 @@ void main()
 			t[a] =time;
 		}
 	}
-	printf("\n\nProcess\t     Priority   |   Burst Time   |Turnaround Time|Waiting Time\n\n");
+	printf("\n\n Process\t     Priority   |   Burst Time   |Turnaround Time|Waiting Time\n\n");
 	for (cnt=0;cnt<np;cnt++)
 	{ 
 	      printf("P[%d]\t|\t%d\t|\t%d\t|\t%d\t|\t%d\n",cnt+1,  prty[cnt]-((t[cnt]-AT[cnt])/2),BT[cnt],t[cnt]-AT[cnt],t[cnt]-BT[cnt]-AT[cnt]); 
